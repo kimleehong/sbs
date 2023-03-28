@@ -1,0 +1,188 @@
+/* 폰트적용 */
+
+html > body {
+  font-family: "Montserrat", 'Noto Sans KR', sans-serif;
+}
+
+/* 라이브러리 */
+.con{
+  max-width: 1920px;
+}
+
+.con-1 {
+  max-width: 1900px;
+}
+
+/* 커스텀 logo */
+.top-bar {
+  height: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  backdrop-filter: blur(16px);
+}
+
+.top-bar > .con-1 > .logo > img {
+  width: 188px;
+}
+
+/* 커스텀 menu */
+.menu-box{
+  font-weight: 500;
+  margin-left:80px;
+}
+
+.menu-box > ul > li {
+  padding-right: 100px;
+}
+
+/* menu-reaction */
+.menu-box > ul > li:hover > a {
+  color: rgb(1,62,255);
+  border-bottom: 2px solid rgb(1,62,255);
+}
+
+.menu-box > ul > li > ul > li:hover > a {
+  color: rgb(1,62,255);
+  font-weight: 700;
+  font-size: 14.2px;
+}
+
+/* 2차 메뉴 */
+.menu-box > ul + div {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 420px;
+  display: none;
+  z-index: -1;
+  box-shadow: 0px 0px 15px #f1f1f1;
+  background-color:white;
+}
+
+.menu-box:hover > ul + div {
+  display: block;
+}
+
+.menu-box > ul > li {
+  position: relative;
+}
+
+.menu-box > ul > li > ul {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-box > ul > li > ul > li > a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 36px;
+  color: #bababa;
+  transition: linear 0.2s;
+}
+
+.menu-box:hover > ul > li > ul {
+  display: block;
+}
+
+/* 커스텀 side-menu */
+.dom {
+margin-left: -20px;
+}
+
+.dom > a {
+  border: 2px solid rgb(1,44,182);
+  padding: 0 14px;
+  font-size: 12px;
+  border-radius: 24px;
+  line-height: 30px;
+  color: rgb(1,44,182);
+  transition: linear 0.2s;
+}
+
+.dom > a:hover {
+  color: white;
+  background-color: rgb(1,44,182);
+}
+
+.bon {
+  width: 22px;
+  margin-left: 16px;
+}
+
+.bon:hover{
+  color:  rgb(1,62,255);
+}
+
+.bon {
+  white-space: nowrap;
+  position: relative;
+}
+
+.bon > ul {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translatex(-50%);
+  display: none;
+  border-radius: 20px;
+}
+
+.bon:hover > ul {
+  display: block;
+}
+
+.bon > ul > li {
+  padding: 2px 12px;
+  margin: 0 0 5px;
+  border: 0px solid white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bon > ul > li > a {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.bon > ul > li:hover > a {
+  color: rgb(1,62,255);
+  font-weight: bold;
+}
+
+.bon > ul + div {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translatex(-50%);
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  display: none;
+  z-index: -1;
+  box-shadow: 0px 0px 15px #f1f1f1;
+}
+
+.bon:hover > ul + div {
+  display: block;
+}
+
+.bon > ul > li:hover {
+  background-color:  rgba(1,62,255,.1);
+  border-radius: 10px;
+}
+
+.bon > ul > li:hover > a {
+  color: rgb(1,62,255);
+}
+
